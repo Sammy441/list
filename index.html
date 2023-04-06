@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <span class="ledger">Emzy tech todo list</span>
+
+    </div>
+    <div class="contaner">
+        <div id="newtask">
+            <input type="text" placeholder="Enter Task">
+            <button id="push">Add</button>
+        </div>
+        <div id=""></div>
+
+    </div>
+    
+
+
+
+
+
+
+    <script>
+        document.querySelector('#push').onclick = function(){
+    if(document.queryselector('#newtask input').
+    value.length == 0){
+    
+        alert("please a enter a task");
+    }
+    else{
+        document.querySelector('#tasks').innerHTML += `<div class="task">
+<span id="taskname">${document.querySelector('#newtask input').value}
+}
+</span>
+  <button class="delete">X
+
+  </button>
+</div>; `
+var current_task = document.querySelectorAll ('.delete');
+for (var i = 0; i < current_tasks.length; i++ ){
+current_tasks[i].onclick = function (){
+  this.parentNode.remove();
+
+}
+}
+
+    var_current = document.querySelectorAll ('#taskname');
+for (var i = 0; i < current_tasks.length; i++ ){
+tasks[i].onclick = function (){
+    this.classlist.toggle('completed')   
+
+    } 
+
+}
+document.querySelector('#newtask input').value = "";
+}
+}
+        
+    </script>
+    
+</body>
+</html>
